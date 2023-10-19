@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Dışarıdan stil dosyasını içe aktarır -->
+    <title>index</title> <!-- Sayfanın başlığını belirler -->
+</head>
+<body>
+    <div class="navbar">
+        <a href="">Pokemonlar</a>
+        <a href="#" onclick="openLogin()">Login</a>
+    </div>
+
+    <!-- Giriş Penceresi -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <button class="close-button" onclick="closeLogin()">&times;</button>
+            <h2>User Login</h2>
+            <input type="text" id="username" class="login-input" placeholder="username">
+            <input type="password" id="password" class="login-input" placeholder="password">
+            <button class="login-button" onclick="login()">User Login</button>
+            <div id="message"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- Bir "container" adında bir bölüm oluşturur. -->
+        <!-- Her biri "panel" sınıfına sahip 5 adet bölüm oluşturur. -->
+        <!-- Her panel bir Pokémon'un resmi ve adını içerir. -->
+        <div class="panel active" style="background-image: url('https://i.pinimg.com/474x/79/9f/67/799f679af3b1a41e8a4bac1a5ac82147.jpg');">
+            <h3>Cubone</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://i.pinimg.com/474x/0b/44/7d/0b447d3a953be23047ed3b10817324a9.jpg');">
+            <h3>Psyduck</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://i.pinimg.com/474x/58/3d/47/583d47a10f1feff559641b7c241d2778.jpg');">
+            <h3>Snorlax</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://i.pinimg.com/474x/88/f3/0d/88f30dff9be580e7e475a69ac687153e.jpg');">
+            <h3>Fluxxy</h3>
+        </div>
+        <div class="panel" style="background-image: url('https://i.pinimg.com/474x/7c/12/96/7c1296d2489216974113f556564c4426.jpg');">
+            <h3>Venonat</h3>
+        </div>
+    </div>
+
+    <!-- Sayfanın alt kısmında bir sıralama çubuğu (pagination) oluşturur -->
+    <div class="pagination">
+        <!-- 5 adet noktayı içeren sıralama çubuğunu oluşturur -->
+        <span class="dot"><span class="dot-number">1</span></span>
+        <span class="dot"><span class="dot-number">2</span></span>
+        <span class="dot"><span class="dot-number">3</span></span>
+        <span class="dot"><span class="dot-number">4</span></span>
+        <span class="dot"><span class="dot-number">5</span></span>
+    </div>
+
+    <script src="jss.js"></script> <!-- JavaScript dosyasını sayfaya ekler -->
+
+</body>
+</html>
